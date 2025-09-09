@@ -1,4 +1,4 @@
-# Custom Curation for Apigee API hub: <BR>Integrating Advanced API Security
+# Custom Curation for Apigee API hub: <BR>Integrating Advanced API Security, Security Score
 
 
 ![status](https://img.shields.io/badge/status-preview-green)
