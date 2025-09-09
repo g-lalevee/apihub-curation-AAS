@@ -1,9 +1,4 @@
 {
-  "name": "projects/1020259423319/locations/europe-west1/integrations/apiHubCuration-AAS-Score-v1/versions/3736d830-d0d9-4f32-9f4a-8b2af990c16f",
-  "updateTime": "2025-09-09T23:22:41.921Z",
-  "lockHolder": "lalevee@google.com",
-  "createTime": "2025-09-09T23:19:03.161Z",
-  "lastModifierEmail": "lalevee@google.com",
   "triggerConfigs": [{
     "label": "API Trigger",
     "startTasks": [{
