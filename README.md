@@ -1,4 +1,6 @@
-# Apigee API Hub: API Curation Integration with Apigee Advanced API Security Risk Assesment
+# Custom Curation for Apigee API hub: Integrating Advanced API Security
+
+
 
 [![PyPI status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/) 
 
