@@ -1,4 +1,5 @@
-# Custom Curation for Apigee API hub: Integrating Advanced API Security
+# Custom Curation for Apigee API hub: 
+# Integrating Advanced API Security
 
 
 
@@ -13,16 +14,16 @@
 
 This repository provides a concrete example of a custom **API Hub Curation** process, built using **Google Application Integration**. This process specifically ingests API metadata from Apigee [Advanced API Security](https://cloud.google.com/apigee/docs/api-security) (AAS), Risk Asessment. [Advanced API Security risk assessment](https://cloud.google.com/apigee/docs/api-security/security-scores) continuously evaluates API proxy configurations and calculates security scores to help identify and address vulnerabilities in your APIs.
 
-This API Hub Curation enrich API metadata that has been ingested by Apigee API hub plugins with the Security Score dynamically calculated by AAS. For a comprehensive overview, refer to the [Apigee API hub Curation documentation](https://cloud.google.com/apigee/docs/apihub/curations).
+This API Hub Curation enriches API metadata ingested by Apigee API Hub plugins with the Security Score dynamically calculated by AAS. For a comprehensive overview, refer to the [Apigee API hub Curation documentation](https://cloud.google.com/apigee/docs/apihub/curations).
 
 The curation logic implemented here performs the following steps for each ingested API:
 
 * **Calculate the ASS Score:** 
   
-  It calls Apigee Advanced API Security API to get the security score.
-* **Initialize API hub custom attributs:** 
+  It calls the Apigee Advanced API Security API to get the security score.
+* **Initialize API hub custom attributes:** 
 
-  The AAS Security Score is store in 2 differents custom attributes:
+  The AAS Security Score is stored in two different custom attributes:
     - `aas-score`: This attribute stores the Security Score at API version deployment level
     - `last-aas-score`: This attribute stores the last Security Score calculated at API level.
 
@@ -42,13 +43,13 @@ The curation logic implemented here performs the following steps for each ingest
 
 ## Prerequisites
 
-To implement this sample, you'll need a GCP account with both Apigee API hub and Application Integration activated. If needed refer to Google Documentation [Provision API hub](https://cloud.google.com/apigee/docs/apihub/provision)and [Set up Application Integration](https://cloud.google.com/application-integration/docs/setup-application-integration).
+To implement this sample, you'll need a GCP account with both Apigee API hub and Application Integration activated. If needed refer to Google Documentation [Provision API hub](https://cloud.google.com/apigee/docs/apihub/provision) and [Set up Application Integration](https://cloud.google.com/application-integration/docs/setup-application-integration).
 
-You'll also need access to an Apigee organization having Advanced API Security feature activated. If needed refer to Google Documentation [Set up Advanced API Security](https://cloud.google.com/apigee/docs/api-security).
+You'll also need access to an Apigee organization with the Advanced API Security feature activated. If needed, refer to the Google Documentation for [Seting up Advanced API Security](https://cloud.google.com/apigee/docs/api-security)..
 
 
 
-## Configuration: Application Integration
+## Application Integration Configuration
 
 To upload, do the following steps:
 
