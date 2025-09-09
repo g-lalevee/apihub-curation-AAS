@@ -1,5 +1,4 @@
-# Custom Curation for Apigee API hub: 
-# Integrating Advanced API Security
+# Custom Curation for Apigee API hub: <BR>Integrating Advanced API Security
 
 
 
