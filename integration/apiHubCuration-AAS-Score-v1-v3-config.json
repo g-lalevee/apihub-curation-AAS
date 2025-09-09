@@ -1,0 +1,6 @@
+{
+  "`CONFIG_aasProfile`": "google-default",
+  "`CONFIG_apigeeEndpoint`": "apigee.googleapis.com",
+  "`CONFIG_apiHubRegion`": "europe-west1",
+  "`CONFIG_apiHubProject`": "bap-emea-apigee-5"
+}
