@@ -26,7 +26,7 @@ The curation logic implemented here performs the following steps for each ingest
 
 
 <p align="center">
-<img src="./images/attributes.png" alt="Attributes" width="600">
+<img src="./images/attributes.png" alt="Attributes">
 </p>
 
 
@@ -35,7 +35,7 @@ The curation logic implemented here performs the following steps for each ingest
 
 
 <P>
-<img src="./images/integration.png" alt="Attributes" width="600">
+<img src="./images/integration.png" alt="Attributes">
 </p>
 
 ## Prerequisites
@@ -43,10 +43,6 @@ The curation logic implemented here performs the following steps for each ingest
 To implement this sample, you'll need a GCP account with both Apigee API hub and Application Integration activated. If needed refer to Google Documentation [Provision API hub](https://cloud.google.com/apigee/docs/apihub/provision)and [Set up Application Integration](https://cloud.google.com/application-integration/docs/setup-application-integration).
 
 You'll also need access to an Apigee organization having Advanced API Security feature activated. If needed refer to Google Documentation [Set up Advanced API Security](https://cloud.google.com/apigee/docs/api-security).
-
-
-
-
 
 
 
@@ -108,7 +104,7 @@ If you are creating a new integration:
     - Click **Create**.
 
 
-2. Configuration: Curation
+2. Set Up the Custom Curation
 
     Now you'll create a new custom Curation within Apigee API Hub and then associate it with an ingestion plugin.
 
@@ -127,18 +123,18 @@ If you are creating a new integration:
 
     Next, you need to associate this new curation with your ingestion Apigee X plugin. 
 
-  3. Configuration: Plugin
+  3. Link the Plugin to the Curation
 
-    To associate your new curation:
+     To associate your new curation:
 
-    1. Select the **Plugin** sub-menu, then click **Setup a new Plugin**
-    2. Find the plugin instance you want to modify (e.g., the "Apigee X and Hybrid plugin")
-    3. Click the **See details** option for that plugin instance
-    4. In the plugin details pane, locate the Curation logic setting
-    5. Change the value from Default curation to your custom curation: from the dropdown list, select the custom curation you set up in the previous step
-    6. Click **Save** to apply the changes
+        1. Select the **Plugin** sub-menu, then click **Setup a new Plugin**
+        2. Find the plugin instance you want to modify (e.g., the "Apigee X and Hybrid plugin")
+        3. Click the **See details** option for that plugin instance
+        4. In the plugin details pane, locate the Curation logic setting
+        5. Change the value from Default curation to your custom curation: from the dropdown list, select the custom curation you set up in the previous step
+        6. Click **Save** to apply the changes
 
-    Once you save, the plugin will begin to use your new curation logic for all future data ingestion, automatically applying your custom rules and enriching your API data in a way that aligns with your organization's specific needs.
+     Once you save, the plugin will begin to use your new curation logic for all future data ingestion, automatically applying your custom rules and enriching your API data in a way that aligns with your organization's specific needs.
 
 
 ---
