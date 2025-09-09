@@ -1,7 +1,8 @@
 {
-  "name": "projects/1020259423319/locations/europe-west1/integrations/apiHubCuration-AAS-Score-v1/versions/c77212ee-d38d-4d5f-bb1c-d9d8211a0f63",
-  "updateTime": "2025-09-09T15:26:11.116Z",
-  "createTime": "2025-09-09T15:25:51.456Z",
+  "name": "projects/1020259423319/locations/europe-west1/integrations/apiHubCuration-AAS-Score-v1/versions/3736d830-d0d9-4f32-9f4a-8b2af990c16f",
+  "updateTime": "2025-09-09T23:22:41.921Z",
+  "lockHolder": "lalevee@google.com",
+  "createTime": "2025-09-09T23:19:03.161Z",
   "lastModifierEmail": "lalevee@google.com",
   "triggerConfigs": [{
     "label": "API Trigger",
@@ -491,27 +492,6 @@
     "displayName": "enumValue",
     "jsonSchema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"title\": \"Generated schema for apiData enum Values\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"enumValues\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"values\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"id\": {\n                \"type\": \"string\"\n              }\n            },\n            \"required\": [\"id\"]\n          }\n        }\n      },\n      \"required\": [\"values\"]\n    }\n  },\n  \"required\": [\"enumValues\"]\n}"
   }, {
-    "key": "ownerName",
-    "dataType": "STRING_VALUE",
-    "defaultValue": {
-      "stringValue": "C. Lalevee"
-    },
-    "displayName": "ownerName"
-  }, {
-    "key": "ownerEmail",
-    "dataType": "STRING_VALUE",
-    "defaultValue": {
-      "stringValue": "lalevee@google.com"
-    },
-    "displayName": "ownerEmail"
-  }, {
-    "key": "team",
-    "dataType": "STRING_VALUE",
-    "defaultValue": {
-      "stringValue": "legacy"
-    },
-    "displayName": "team"
-  }, {
     "key": "targetUser",
     "dataType": "STRING_VALUE",
     "defaultValue": {
@@ -583,15 +563,6 @@
     "isTransient": true,
     "producer": "1_23"
   }, {
-    "key": "apiData",
-    "dataType": "JSON_VALUE",
-    "defaultValue": {
-      "jsonValue": "{\n  \"apiMetadataList\": {\n    \"apiMetadata\": [{\n      \"api\": {\n        \"displayName\": \"cl-test01\",\n        \"fingerprint\": \"cl-test01\"\n      },\n      \"versions\": [{\n        \"version\": {\n          \"displayName\": \"1\"\n        },\n        \"deployments\": [{\n          \"deployment\": {\n            \"displayName\": \"cl-test01\",\n            \"deploymentType\": {\n              \"enumValues\": {\n                \"values\": [{\n                  \"id\": \"apigee\"\n                }]\n              }\n            },\n            \"resourceUri\": \"organizations/bap-emea-apigee-5/environments/default-dev/apis/cl-test01\",\n            \"endpoints\": [\"https://34-149-164-96.nip.io/cl-test01\", \"https://34.117.38.184.nip.io/cl-test01\", \"https://34.149.164.96.nip.io/cl-test01\", \"https://api.n0whereman.org/cl-test01\", \"https://mtls.iloveapis.io/cl-test01\"],\n            \"managementUrl\": {\n              \"uriValues\": {\n                \"values\": [\"https://console.cloud.google.com/apigee/proxies/cl-test01/develop/1?project\\u003dbap-emea-apigee-5\"]\n              }\n            },\n            \"sourceUri\": {\n              \"uriValues\": {\n                \"values\": [\"/manifests/gateways/projects_bap-emea-apigee-5_locations_europe-west1_plugins_system-apigee-x-and-hybrid_instances_93ba9334-e09a-4190-ac34-830850056457/organizations/bap-emea-apigee-5/environments/default-dev/deployments/cl-test01/proxy-manifest.protobuf\"]\n              }\n            },\n            \"sourceProject\": \"bap-emea-apigee-5\",\n            \"sourceEnvironment\": \"default-dev\"\n          },\n          \"originalId\": \"organizations/bap-emea-apigee-5/environments/default-dev/apis/cl-test01/basePaths//cl-test01\",\n          \"originalUpdateTime\": \"2025-09-08T21:54:52.640779815Z\"\n        }],\n        \"originalId\": \"organizations/bap-emea-apigee-5/apis/cl-test01\",\n        \"originalUpdateTime\": \"2025-09-08T21:54:51.140553Z\"\n      }],\n      \"originalId\": \"organizations/bap-emea-apigee-5/apis/cl-test01\",\n      \"originalUpdateTime\": \"2025-09-08T21:54:51.140553Z\"\n    }]\n  }\n}"
-    },
-    "displayName": "apiData",
-    "inputOutputType": "IN_OUT",
-    "jsonSchema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"apiMetadataList\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"apiMetadata\": {\n          \"type\": [\"array\", \"null\"],\n          \"items\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"versions\": {\n                \"type\": \"array\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"specs\": {\n                      \"type\": \"array\",\n                      \"items\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"spec\": {\n                            \"type\": \"object\",\n                            \"properties\": {\n                              \"specType\": {\n                                \"type\": \"object\",\n                                \"properties\": {\n                                  \"attribute\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"enumValues\": {\n                                    \"type\": \"object\",\n                                    \"properties\": {\n                                      \"values\": {\n                                        \"type\": \"array\",\n                                        \"items\": {\n                                          \"type\": \"object\",\n                                          \"properties\": {\n                                            \"displayName\": {\n                                              \"type\": \"string\"\n                                            },\n                                            \"id\": {\n                                              \"type\": \"string\"\n                                            }\n                                          }\n                                        }\n                                      }\n                                    }\n                                  }\n                                }\n                              },\n                              \"contents\": {\n                                \"type\": \"object\",\n                                \"properties\": {\n                                  \"contents\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"mimeType\": {\n                                    \"type\": \"string\"\n                                  }\n                                }\n                              },\n                              \"displayName\": {\n                                \"type\": \"string\"\n                              },\n                              \"name\": {\n                                \"type\": \"string\"\n                              }\n                            }\n                          }\n                        }\n                      }\n                    },\n                    \"deployments\": {\n                      \"type\": \"array\",\n                      \"items\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"deployment\": {\n                            \"type\": \"object\",\n                            \"properties\": {\n                              \"environment\": {\n                                \"type\": \"object\",\n                                \"properties\": {\n                                  \"attribute\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"enumValues\": {\n                                    \"type\": \"object\",\n                                    \"properties\": {\n                                      \"values\": {\n                                        \"type\": \"array\",\n                                        \"items\": {\n                                          \"type\": \"object\",\n                                          \"properties\": {\n                                            \"displayName\": {\n                                              \"type\": \"string\"\n                                            },\n                                            \"id\": {\n                                              \"type\": \"string\"\n                                            }\n                                          }\n                                        }\n                                      }\n                                    }\n                                  }\n                                }\n                              },\n                              \"displayName\": {\n                                \"type\": \"string\"\n                              },\n                              \"name\": {\n                                \"type\": \"string\"\n                              }\n                            }\n                          }\n                        }\n                      }\n                    },\n                    \"version\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"displayName\": {\n                          \"type\": \"string\"\n                        },\n                        \"name\": {\n                          \"type\": \"string\"\n                        }\n                      }\n                    }\n                  }\n                }\n              },\n              \"originalCreateTime\": {\n                \"type\": \"string\"\n              },\n              \"originalUpdateTime\": {\n                \"type\": \"string\"\n              },\n              \"api\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"owner\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"email\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"displayName\": {\n                    \"type\": \"string\"\n                  },\n                  \"name\": {\n                    \"type\": \"string\"\n                  },\n                  \"fingerprint\": {\n                    \"type\": \"string\"\n                  },\n                  \"description\": {\n                    \"type\": \"string\"\n                  },\n                  \"targetUser\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"stringValues\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"values\": {\n                            \"type\": \"array\",\n                            \"items\": {\n                              \"type\": \"string\"\n                            }\n                          }\n                        }\n                      },\n                      \"attribute\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  }\n                }\n              },\n              \"originalId\": {\n                \"type\": \"string\"\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
-  }, {
     "key": "apigeeOrganization",
     "dataType": "STRING_VALUE",
     "defaultValue": {
@@ -631,6 +602,33 @@
       "stringValue": ""
     },
     "displayName": "apiScore"
+  }, {
+    "key": "apiData",
+    "dataType": "JSON_VALUE",
+    "displayName": "apiData",
+    "inputOutputType": "IN_OUT",
+    "jsonSchema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"apiMetadataList\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"apiMetadata\": {\n          \"type\": [\"array\", \"null\"],\n          \"items\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"versions\": {\n                \"type\": \"array\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"specs\": {\n                      \"type\": \"array\",\n                      \"items\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"spec\": {\n                            \"type\": \"object\",\n                            \"properties\": {\n                              \"specType\": {\n                                \"type\": \"object\",\n                                \"properties\": {\n                                  \"attribute\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"enumValues\": {\n                                    \"type\": \"object\",\n                                    \"properties\": {\n                                      \"values\": {\n                                        \"type\": \"array\",\n                                        \"items\": {\n                                          \"type\": \"object\",\n                                          \"properties\": {\n                                            \"displayName\": {\n                                              \"type\": \"string\"\n                                            },\n                                            \"id\": {\n                                              \"type\": \"string\"\n                                            }\n                                          }\n                                        }\n                                      }\n                                    }\n                                  }\n                                }\n                              },\n                              \"contents\": {\n                                \"type\": \"object\",\n                                \"properties\": {\n                                  \"contents\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"mimeType\": {\n                                    \"type\": \"string\"\n                                  }\n                                }\n                              },\n                              \"displayName\": {\n                                \"type\": \"string\"\n                              },\n                              \"name\": {\n                                \"type\": \"string\"\n                              }\n                            }\n                          }\n                        }\n                      }\n                    },\n                    \"deployments\": {\n                      \"type\": \"array\",\n                      \"items\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"deployment\": {\n                            \"type\": \"object\",\n                            \"properties\": {\n                              \"environment\": {\n                                \"type\": \"object\",\n                                \"properties\": {\n                                  \"attribute\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"enumValues\": {\n                                    \"type\": \"object\",\n                                    \"properties\": {\n                                      \"values\": {\n                                        \"type\": \"array\",\n                                        \"items\": {\n                                          \"type\": \"object\",\n                                          \"properties\": {\n                                            \"displayName\": {\n                                              \"type\": \"string\"\n                                            },\n                                            \"id\": {\n                                              \"type\": \"string\"\n                                            }\n                                          }\n                                        }\n                                      }\n                                    }\n                                  }\n                                }\n                              },\n                              \"displayName\": {\n                                \"type\": \"string\"\n                              },\n                              \"name\": {\n                                \"type\": \"string\"\n                              }\n                            }\n                          }\n                        }\n                      }\n                    },\n                    \"version\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"displayName\": {\n                          \"type\": \"string\"\n                        },\n                        \"name\": {\n                          \"type\": \"string\"\n                        }\n                      }\n                    }\n                  }\n                }\n              },\n              \"originalCreateTime\": {\n                \"type\": \"string\"\n              },\n              \"originalUpdateTime\": {\n                \"type\": \"string\"\n              },\n              \"api\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"owner\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"email\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"displayName\": {\n                    \"type\": \"string\"\n                  },\n                  \"name\": {\n                    \"type\": \"string\"\n                  },\n                  \"fingerprint\": {\n                    \"type\": \"string\"\n                  },\n                  \"description\": {\n                    \"type\": \"string\"\n                  },\n                  \"targetUser\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"stringValues\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"values\": {\n                            \"type\": \"array\",\n                            \"items\": {\n                              \"type\": \"string\"\n                            }\n                          }\n                        }\n                      },\n                      \"attribute\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  }\n                }\n              },\n              \"originalId\": {\n                \"type\": \"string\"\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+  }, {
+    "key": "ownerEmail",
+    "dataType": "STRING_VALUE",
+    "defaultValue": {
+      "stringValue": "myemail@email.com"
+    },
+    "displayName": "ownerEmail"
+  }, {
+    "key": "ownerName",
+    "dataType": "STRING_VALUE",
+    "defaultValue": {
+      "stringValue": "MyName"
+    },
+    "displayName": "ownerName"
+  }, {
+    "key": "team",
+    "dataType": "STRING_VALUE",
+    "defaultValue": {
+      "stringValue": "APIM"
+    },
+    "displayName": "team"
   }],
   "cloudLoggingDetails": {
     "cloudLoggingSeverity": "INFO",
@@ -644,9 +642,6 @@
         "stringValue": "google-default"
       },
       "displayName": "`CONFIG_aasProfile`"
-    },
-    "value": {
-      "stringValue": "google-default"
     }
   }, {
     "parameter": {
@@ -656,9 +651,6 @@
         "stringValue": "apigee.googleapis.com"
       },
       "displayName": "`CONFIG_apigeeEndpoint`"
-    },
-    "value": {
-      "stringValue": "apigee.googleapis.com"
     }
   }, {
     "parameter": {
@@ -668,9 +660,6 @@
         "stringValue": "europe-west1"
       },
       "displayName": "`CONFIG_apiHubRegion`"
-    },
-    "value": {
-      "stringValue": "europe-west1"
     }
   }, {
     "parameter": {
@@ -680,9 +669,6 @@
         "stringValue": "bap-emea-apigee-5"
       },
       "displayName": "`CONFIG_apiHubProject`"
-    },
-    "value": {
-      "stringValue": "bap-emea-apigee-5"
     }
   }]
 }
