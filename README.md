@@ -49,7 +49,11 @@ You'll also need access to an Apigee organization with the Advanced API Security
 
 ## Application Integration Configuration
 
-To upload, do the following steps:
+First, create an **Application Integration Auth Profile** to call the Apigee Management API and retrieve the Security Score.
+
+Following the [Application Integration Documentation](https://cloud.google.com/application-integration/docs/configure-authentication-profiles), create a new Auth Profile based on Service Account. You will need a Service account having `apigee.securityAssessmentResults.compute` permission, like in roles Apigee Admin or Apigee Security Viewer. Once created, make sure to note the name of the Auth Profile, as you will need it later.
+
+Then, to upload, do the following steps:
 
 1) Clone the repo 
 ```sh
@@ -71,8 +75,9 @@ If you are creating a new integration:
     - `CONFIG_apigeeEndpoint`: the hostname of Apigee Management Endpoint. You could change it if your organization is using DRZ.
     - `CONFIG_apiHubProject`: the name of the GCP Project hosting your API hub instance.
     - `CONFIG_apiHubRegion`: the name of the GCP Region hosting your API hub instance.
-9) As the example, the integration also set system attributes. Values are stores in variables default values: `apiStyle`, `businessUnit`, `maturityLevel`, `targetUser`, `team`, `ownerName`, `ownerEmail`. You can update it to match variables values defined in your API hub configuration.
-10) In the integration designer, click Deploy.
+9) As an example, the integration also sets several API hub System Attributes. The default values for these attributes are stored in the following variables: `apiStyle`, `businessUnit`, `maturityLevel`, `targetUser`, `team`, `ownerName`, and `ownerEmail`. You can update these values to match those defined in your API Hub configuration.
+10) Update the REST task #23 **Get API Score** by setting the `Authentication Profile` to the name of the Auth Profile you created earlier.
+10) Click **Publish** button
 
 
 ## Configuration: Apigee API hub
